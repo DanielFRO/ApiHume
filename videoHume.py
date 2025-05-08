@@ -124,8 +124,9 @@ async def process_video(client: AsyncHumeClient):
     cv2.destroyAllWindows()
 
 async def main():
-    client = AsyncHumeClient(api_key="3BPCIdMJ6NQo2tNY71axf4GO9wkpazNRq0zTiYWTXJq7szx9")
+    client = AsyncHumeClient(api_key="YOUR_API_KEY")
     await process_video(client)
 
 if __name__ == "__main__":
     asyncio.run(main())
+    
